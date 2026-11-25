@@ -1,0 +1,10 @@
+from random import *
+M, N = map(int, input().split())
+A = [[randint(0, 100) for j in range(N)] for i in range(M)]
+for i in range(M):
+    print(A[i])
+print("Елементи стовпців з непарними номерами:")
+for j in range(0, N, 2):
+    for i in range(M):
+        print(A[i][j], end=' ')
+    print()
