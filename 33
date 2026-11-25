@@ -1,0 +1,12 @@
+from random import *
+n = int(input())
+a = [randint(0, 100) for i in range(n)]
+print(a)
+
+b = []
+for i in range(len(a)):
+    if a[i] % 2 != 0:
+        b.append(a[i])
+
+print(b)
+print(len(b))
